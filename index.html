@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" sizes="192x192" href="images/icon2.png" type="image/icon type">
+    <link rel="stylesheet" href="index.css">
+    <title>Portfolio -Tushar</title>
+</head>
+
+<body>
+    <div class="left-container">
+        <div class="left-inner-container">
+            <div class="profile-pic-container">DP</div>
+            <div class="profile-des-container">brief desc here</div>
+            <button id="download-btn">Download Resume&nbsp;&nbsp;<img src="images/download-icon.png" alt=""></button>
+        </div>
+    </div>
+    <div class="right-container">
+
+        <div class="phone-wrapper">
+            <div class="phone-upper">
+                <span class="phone-upper-slot"></span>
+            </div>
+            <div class="phone-volume-container">
+                <span class="phone-volume-keys"></span>
+                <span class="phone-volume-keys"></span>
+            </div>
+            <div class="phone-middle">
+                <div class="home-screen">
+                    <div>
+                        <p class="phone-time" id="statusbar-time"></p>
+                        <img src="images/status_bar.png" class="phone-status-bar" alt="status_bar">
+                    </div>
+                    <div class="icon-grid-container">
+                        <div class="grid-item"><img src="images/about-icon.png" alt="">
+                            <p class="icon-name">About</p>
+                        </div>
+                        <div class="grid-item"><img src="images/education-icon.png" alt="">
+                            <p class="icon-name">Education</p>
+                        </div>
+                        <div class="grid-item"><img src="images/skills-icon.png" alt="">
+                            <p class="icon-name">Skills</p>
+                        </div>
+                        <div class="grid-item"><img src="images/projects-icon.png" alt="">
+                            <p class="icon-name">Projects</p>
+                        </div>
+                        <div class="grid-item"><img src="images/experience-icon.png" alt="">
+                            <p class="icon-name">Experiences</p>
+                        </div>
+                        <div class="grid-item"><img src="images/interest-icon.png" alt="">
+                            <p class="icon-name">Interests</p>
+                        </div>
+                        <div class="grid-item"><img src="images/resume-icon.png" alt="">
+                            <p class="icon-name">Resume</p>
+                        </div>
+                        <div class="grid-item"><img src="images/contact-icon.png" alt="">
+                            <p class="icon-name">Contact</p>
+                        </div>
+                        <div class="grid-item"></div>
+                        
+                    </div>
+                </div>
+                <div class="lock-screen">
+                    <div class="lock-screen-time">
+                        <p class="phone-time"></p>
+                    </div>
+                    <p class="lockscreen-portfolio">PORTFOLIO</p>
+                    <div class="callout-div">
+                        <img src="images/callout-img.png" alt="Press to Unlock" id="callout">
+                    </div>
+
+                </div>
+            </div>
+            <div class="phone-lower">
+                <span class="phone-lower-slot" onclick="phone_unlock()"></span>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>
