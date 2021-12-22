@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -316,7 +317,7 @@ body {
 }
 
 footer {
-  padding: 5px 10px 10px 10px;
+  padding: 20px 10px 10px 10px;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   flex: 0 0 100%;
@@ -491,6 +492,7 @@ footer {
   .grid-item img {
     height: 13vw;
   }
+
 }
 
 @media screen and (max-width: 300px) {
