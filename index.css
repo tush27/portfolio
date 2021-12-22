@@ -7,6 +7,7 @@
 body {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 
   background: linear-gradient(
     -45deg,
@@ -193,23 +194,19 @@ body {
   height: inherit;
 }
 
-
 .icon-grid-container::-webkit-scrollbar {
   width: 8px;
-  
-  
 }
 
 .icon-grid-container::-webkit-scrollbar-track {
-  display: none; 
+  display: none;
 }
 
 .icon-grid-container::-webkit-scrollbar-thumb {
   background: rgba(109, 108, 108, 0.938);
   border-radius: 3px;
-  background-clip:padding-box;
+  background-clip: padding-box;
   border-right: 5px solid transparent;
-
 }
 
 .icon-grid-container::-webkit-scrollbar-thumb:hover {
@@ -288,7 +285,7 @@ body {
 }
 
 .profile-des-container {
-  background-color:#ccc;
+  background-color: #ccc;
   font: 20px sans-serif;
   height: 100px;
   width: 70%;
@@ -318,6 +315,92 @@ body {
   /* position: abslute; */
 }
 
+footer {
+  padding: 5px 10px 10px 10px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  flex: 0 0 100%;
+  color: #9CC;
+  text-align: center;
+}
+
+.social-img {
+  height: 25px;
+  cursor: pointer;
+  margin: 3px;
+}
+
+.info-container {
+  display: none;
+  position: absolute;
+  height: 90vh;
+  width: 90%;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  background-color: rgba(20, 20, 20, 0.89);
+  color: black;
+  border-radius: 20px;
+}
+.btn {
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 25%;
+  height: 8vh;
+  opacity: 0.8;
+  font-size: 1.3rem;
+  font-weight: bold;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  border-radius: 20px;
+}
+.btn:hover{
+  opacity: 1;
+}
+
+.info-inner{
+  top: 5vh;
+  position: absolute;
+  width: 90%;
+  height: 70vh;
+  background-color: white;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 20px;
+  overflow: auto;
+  padding: 20px;
+ 
+  
+}
+
+#about-container{
+  display: none;
+}
+#education-container{
+  display: none;
+}
+#skills-container{
+  display: none;
+}
+#experiences-container{
+  display: none;
+}
+#interests-container{
+  display: none;
+}
+#contact-container{
+  display: none;
+}
+
+#skills-container progress{
+  left: 150px;
+  position: absolute;
+}
 
 
 
@@ -333,6 +416,13 @@ body {
 
 
 
+
+
+
+
+
+
+/* -------------------responsiveness-------------------- */
 @media screen and (max-width: 900px) {
   body {
     flex-direction: column;
@@ -344,59 +434,68 @@ body {
   .right-container {
     width: 100%;
   }
+  footer {
+    flex: none;
+  }
+  .info-container {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    -ms-transform: none;
+  transform: none;
+  border-radius: 0px;
+}
 }
 
 @media screen and (max-width: 450px) {
- body{
-  background: linear-gradient(
-    -45deg,
-    rgb(10, 252, 119),
-    #bbb,
-    #ddd,
-    rgb(24, 233, 248)
-  );
-  animation: none
- }
- .profile-pic-container{
-   height: 50vw;
-   width: 50vw;
-   border: 2vw solid #fff;
+  body {
+    background: linear-gradient(
+      -45deg,
+      rgb(10, 252, 119),
+      #bbb,
+      #ddd,
+      rgb(24, 233, 248)
+    );
+    animation: none;
+  }
+  .profile-pic-container {
+    height: 50vw;
+    width: 50vw;
+    border: 2vw solid #fff;
+  }
+  .profile-des-container {
+    height: 25vh;
+  }
 
- }
-.profile-des-container{
-  height: 25vh;
+  #download-btn {
+    outline: none;
+  }
+  .phone-wrapper {
+    max-width: 90vw;
+  }
+  .phone-upper-slot {
+    width: 10vw;
+  }
+  .lock-screen-time {
+    font-size: 6vw;
+  }
+  .lockscreen-portfolio {
+    font-size: 10vw;
+  }
+  #callout {
+    height: 10vw;
+  }
+  .grid-item img {
+    height: 13vw;
+  }
 }
-
- #download-btn{
-  outline: none;
-
- }
- .phone-wrapper{
-   max-width: 90vw;
- }
- .phone-upper-slot{
-   width: 10vw;
- }
- .lock-screen-time{
-   font-size: 6vw;
- }
- .lockscreen-portfolio{
-   font-size: 10vw;
- }
- #callout{
-   height: 10vw;
- }
- .grid-item img{
-   height: 13vw;
- }
-}
-
-
 
 @media screen and (max-width: 300px) {
-  body{
+  body {
     background: none;
-   background-color: #bbb;
-   animation: none
+    background-color: #bbb;
+    animation: none;
   }
- }
+}

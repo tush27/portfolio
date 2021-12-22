@@ -11,13 +11,118 @@
 </head>
 
 <body>
+    <!-- ----------------------------------------------------left section-------------------------------->
     <div class="left-container">
         <div class="left-inner-container">
             <div class="profile-pic-container">DP</div>
             <div class="profile-des-container">brief desc here</div>
             <button id="download-btn">Download Resume&nbsp;&nbsp;<img src="images/download-icon.png" alt=""></button>
         </div>
+        <div class="info-container">
+            <div class="info-inner">
+                <div id="about-container" class="info-shutter">
+                    About
+                </div>
+                <div id="education-container" class="info-shutter">
+                    <h1>Education</h1>
+                    <hr style="background-color: black;">
+                    <br><br>
+                    <ul>
+                        <li>
+                            <h4>Thapar Institute of Engineering and Technology, Patiala (IN)</h4>
+                            <hr style="opacity: 0.5;">
+                            <br>
+                            Pursuing UG in Computer Engineering <br>
+                            Aug, 2019 - 2023 <br>
+                            Current CGPA: 8.52
+                        </li>
+                        <br>
+                        <li>
+                            <h4>Jawahar Navodaya Vidyalaya, Yamuna Nagar (IN)</h4>
+                            <hr style="opacity: 0.5;">
+                            <br>
+                            Senior Secondary <br>
+                            2019 passed out <br>
+                            Secured 93% (Non-Med + CS)
+                        </li>
+                        <br>
+                        <li>
+                            <h4>Ganpati Convent School, Bilaspur (IN)</h4>
+                            <hr style="opacity: 0.5;">
+                            <br>
+                            Secondary <br>
+                            2017 passed out <br>
+                            Obtained 10 CGPA
+                        </li>
+                    </ul>
+                </div>
+                <div id="skills-container" class="info-shutter">
+                    <h1>Technical Skills</h1>
+                    <hr style="background-color: black;">
+                    <br><br>
+                    <h3><u>Programming languages:</u></h3>
+                    <br>
+                    <label for="file1">Python</label>
+                    <progress id="file1" value="70" max="100"> </progress><br>
+                    <label for="file2">HTML</label>
+                    <progress id="file2" value="80" max="100"> </progress><br>
+                    <label for="file3">CSS</label>
+                    <progress id="file3" value="75" max="100"> </progress><br>
+                    <label for="file4">Javascript</label>
+                    <progress id="file4" value="60" max="100"> </progress><br>
+                    <label for="file5">C</label>
+                    <progress id="file5" value="80" max="100"> </progress><br>
+                    <label for="file6">C++</label>
+                    <progress id="file6" value="80" max="100"> </progress><br>
+                    <label for="file7">Java</label>
+                    <progress id="file7" value="60" max="100"> </progress><br>
+                    <label for="file8">SQL</label>
+                    <progress id="file8" value="70" max="100"> </progress><br>
+                    <br>
+                    <h3><u>Tools:</u></h3>
+                    <br>
+                    <label for="file9">Android Studio</label>
+                    <progress id="file9" value="70" max="100"> </progress><br>
+                    <label for="file10">VS code</label>
+                    <progress id="file10" value="85" max="100"> </progress><br>
+                    <label for="file11">Github</label>
+                    <progress id="file11" value="65" max="100"> </progress><br>
+                    <label for="file12">Linux</label>
+                    <progress id="file12" value="70" max="100"> </progress><br>
+                    <label for="file13">WordPress</label>
+                    <progress id="file13" value="70" max="100"> </progress><br>
+                    <label for="file14">BoUML</label>
+                    <progress id="file14" value="80" max="100"> </progress><br>
+                    <label for="file15">Autodesk Eagle</label>
+                    <progress id="file15" value="60" max="100"> </progress><br>
+
+
+                </div>
+                <div id="experiences-container" class="info-shutter">
+                    Oops! <br> This section is currently under construction. Please revisit later...
+                </div>
+                <div id="interests-container" class="info-shutter">
+                    Oops! <br> This section is currently under construction. Please revisit later...
+                </div>
+                <div id="contact-container" class="info-shutter">
+                    <h1>Contact</h1>
+                    <hr>
+                    <br>
+                    &#128205;&emsp;&nbsp;&nbsp;&nbsp; Yamuna nagar, Haryana (IN) <br>
+                    &#128231;&nbsp;&emsp; <a href="mailto:tusharsaini1301@gmail.com?subject=mail_via:portfolio">
+                        tusharsaini1301@gmail.com
+                    </a><br>
+                    &#128222;&emsp;&nbsp; +91 9817682248 <br><br><br>
+                    <a href="https://github.com/tush27"><img src="images/github-logo.png" alt="github"
+                            class="social-img"></a>
+                    <a href="https://www.instagram.com/tushar.1301/"><img src="images/instagram-logo.png"
+                            alt="instagram" class="social-img"></a>
+                </div>
+            </div>
+            <button type="button" class="btn" onclick="closeInfo()">Close</button>
+        </div>
     </div>
+    <!-------------------------------------------------------Right section-------------------------------->
     <div class="right-container">
 
         <div class="phone-wrapper">
@@ -29,40 +134,42 @@
                 <span class="phone-volume-keys"></span>
             </div>
             <div class="phone-middle">
+                <!-------------------------------Home screen----------------->
                 <div class="home-screen">
-                    <div>
+                    <div style="position: relative;">
                         <p class="phone-time" id="statusbar-time"></p>
                         <img src="images/status_bar.png" class="phone-status-bar" alt="status_bar">
                     </div>
                     <div class="icon-grid-container">
-                        <div class="grid-item"><img src="images/about-icon.png" alt="">
+                        <div class="grid-item"><img src="images/about-icon.png" onclick="openAbout()">
                             <p class="icon-name">About</p>
                         </div>
-                        <div class="grid-item"><img src="images/education-icon.png" alt="">
+                        <div class="grid-item"><img src="images/education-icon.png" onclick="openEducation()">
                             <p class="icon-name">Education</p>
                         </div>
-                        <div class="grid-item"><img src="images/skills-icon.png" alt="">
+                        <div class="grid-item"><img src="images/skills-icon.png" onclick="openSkills()">
                             <p class="icon-name">Skills</p>
                         </div>
-                        <div class="grid-item"><img src="images/projects-icon.png" alt="">
+                        <div class="grid-item"><img src="images/projects-icon.png">
                             <p class="icon-name">Projects</p>
                         </div>
-                        <div class="grid-item"><img src="images/experience-icon.png" alt="">
+                        <div class="grid-item"><img src="images/experience-icon.png" onclick="openExperiences()">
                             <p class="icon-name">Experiences</p>
                         </div>
-                        <div class="grid-item"><img src="images/interest-icon.png" alt="">
+                        <div class="grid-item"><img src="images/interest-icon.png" onclick="openInterests()">
                             <p class="icon-name">Interests</p>
                         </div>
-                        <div class="grid-item"><img src="images/resume-icon.png" alt="">
+                        <div class="grid-item"><img src="images/resume-icon.png">
                             <p class="icon-name">Resume</p>
                         </div>
-                        <div class="grid-item"><img src="images/contact-icon.png" alt="">
+                        <div class="grid-item"><img src="images/contact-icon.png" onclick="openContact()">
                             <p class="icon-name">Contact</p>
                         </div>
                         <div class="grid-item"></div>
-                        
+
                     </div>
                 </div>
+                <!-----------------------lock screen---------------------->
                 <div class="lock-screen">
                     <div class="lock-screen-time">
                         <p class="phone-time"></p>
@@ -79,6 +186,19 @@
             </div>
         </div>
     </div>
+    <!-----------------------------------------Footer---------------------------------------------->
+    <footer>
+        <span style="font-size: 18px;"> Proudly made with <span style="color: red;">&#10084;</span> by
+            <i><b>Tushar</b></i></span>
+        <br><br>
+        *This webpage is developed using HTML, CSS and Javascript without Bootstrap. <a
+            href="https://github.com/tush27/portfolio" style="color: orange;">View source code</a>
+        <br><br>
+        <a href="https://github.com/tush27"><img src="images/github-logo.png" alt="github" class="social-img"></a>
+        <a href="https://www.instagram.com/tushar.1301/"><img src="images/instagram-logo.png" alt="instagram"
+                class="social-img"></a>
+    </footer>
+
 </body>
 <script src="index.js"></script>
 

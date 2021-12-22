@@ -12,3 +12,48 @@ function phone_unlock(){
   document.getElementsByClassName("home-screen")[0].style.display="block";
   document.getElementsByClassName("phone-lower-slot")[0].style.animation="none";
 }
+
+function openInfo() {
+  document.getElementsByClassName("info-container")[0].style.display = "block";
+}
+function closeInfo() {
+  document.getElementsByClassName("info-container")[0].style.display = "none";
+}
+
+let shut= document.querySelectorAll(".info-shutter");
+function closeOthers(){
+  for (i = 0; i < shut.length; i++) {
+ shut[i].style.display='none';
+  }
+}
+
+ function openAbout(){
+   closeOthers();
+   openInfo();
+   document.getElementById("about-container").style.display="block";
+ }
+ function openEducation(){
+   closeOthers();
+   openInfo();
+   document.getElementById("education-container").style.display="block";
+ }
+ function openSkills(){
+   closeOthers();
+   openInfo();
+   document.getElementById("skills-container").style.display="block";
+ }
+ function openExperiences(){
+   closeOthers();
+   openInfo();
+   document.getElementById("experiences-container").style.display="block";
+ }
+ function openInterests(){
+   closeOthers();
+   openInfo();
+   document.getElementById("interests-container").style.display="block";
+ }
+ function openContact(){
+   closeOthers();
+   openInfo();
+   document.getElementById("contact-container").style.display="block";
+ }
