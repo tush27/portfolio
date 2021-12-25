@@ -8,6 +8,8 @@ var time = today.getHours() + ":" + today.getMinutes();
 updateClock(); 
 
 function phone_unlock(){
+  var audio = document.getElementById("audio");
+  audio.play();
   document.getElementsByClassName("lock-screen")[0].style.display="none";
   document.getElementsByClassName("home-screen")[0].style.display="block";
   document.getElementsByClassName("phone-lower-slot")[0].style.animation="none";
@@ -56,4 +58,8 @@ function closeOthers(){
    closeOthers();
    openInfo();
    document.getElementById("contact-container").style.display="block";
+ }
+
+ window.onload = function(){
+  alert('This website is currently under construction! Some features will become functional in the coming days. Thanks for your cooperation😊');
  }

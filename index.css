@@ -142,7 +142,7 @@ body {
 }
 
 .home-screen {
-  background-image: url(images/phone_background.jpg);
+  background-image: url(images/home-screen.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
@@ -153,7 +153,7 @@ body {
 }
 
 .lock-screen {
-  background-image: url(images/wp2760959-gif-animation-wallpaper.gif);
+  background-image: url(images/lock-screen.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
@@ -184,11 +184,11 @@ body {
 }
 
 .icon-grid-container {
-  top: 5vh;
+  top: 3.5vh;
   display: grid;
   grid-template-columns: auto auto;
-  /* background-color: yellow; */
-  padding: 0px 10px;
+  background-color: rgba(0, 0, 0, 0.199);
+  padding: 10px 10px;
   width: 100%;
   position: absolute;
   overflow: auto;
@@ -228,6 +228,10 @@ body {
   height: 10vh;
   cursor: pointer;
 }
+.grid-item img:hover{
+ height: 11vh;
+ margin:0 -1vh -1vh -1vh;
+}
 .icon-name {
   color: #fff;
 }
@@ -237,9 +241,10 @@ body {
   text-align: center;
   position: relative;
   top: 10vh;
-  color: #eee;
+  color: white;
   font-size: 6vh;
   padding: 10px;
+  /* background-color: rgba(237, 247, 248, 0.658); */
 }
 .lockscreen-portfolio {
   color: white;
@@ -249,6 +254,8 @@ body {
   font-size: 10vh;
   font-style: italic;
   font-family: fantasy;
+  text-shadow: 0px 7px rgba(0, 0, 0);
+  /* background-color: rgba(237, 247, 248, 0.658); */
 }
 .callout-div {
   background-color: transparent;
@@ -278,22 +285,32 @@ body {
 
 .profile-pic-container {
   background-color: #999;
-  height: 50vh;
-  width: 50vh;
+  height: 48vh;
+  width: 48vh;
   border-radius: 50%;
   margin: auto;
   border: 10px solid #fff;
+  box-shadow: 4px 4px rgba(0, 0, 0, 0.103);;
 }
+#name{
+  text-align: center;
+  color: #493945;
+text-shadow: 4px 6px rgba(0, 0, 0, 0.103);
+margin-top: 8px;
+/* background-color: blueviolet; */
 
+}
 .profile-des-container {
-  background-color: #ccc;
-  font: 20px sans-serif;
+  /* background-color: #eee; */
+  /* font: 20px sans-serif; */
   height: 100px;
   width: 70%;
-  border: 5px solid #fff;
+  /* border: 5px solid #ccc; */
   margin-top: 4vh;
   margin-left: auto;
   margin-right: auto;
+  text-align: justify;
+  color: #363636;
 }
 #download-btn {
   margin: 4vh;
@@ -310,7 +327,13 @@ body {
   cursor: pointer;
   position: relative;
 }
+#download-btn:hover{
+  color: #0095f6;
+  background-color: #fff;
+  border: 1.5px solid #0095f6;
 
+
+}
 #download-btn img {
   height: 1em;
   /* position: abslute; */

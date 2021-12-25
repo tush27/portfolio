@@ -11,12 +11,17 @@
 </head>
 
 <body>
-    <!-- ----------------------------------------------------left section-------------------------------->
+    <!------------------------------------------------------left section-------------------------------->
     <div class="left-container">
         <div class="left-inner-container">
-            <div class="profile-pic-container">DP</div>
-            <div class="profile-des-container">brief desc here</div>
-            <button id="download-btn">Download Resume&nbsp;&nbsp;<img src="images/download-icon.png" alt=""></button>
+           <img src="images/pp.jpg" alt="profile pic here" class="profile-pic-container" height="100%">
+           <h1 id="name">Tushar Saini</h1>
+            <div class="profile-des-container">
+               <h3>A Bit About Me</h3><br>
+               text here...
+
+            </div>
+           <a href="https://drive.google.com/file/d/1bkFJvXTFToIV0ddDZb4c6q5N2BZNVxbC/view?usp=sharing" download="tushar_resume"><button id="download-btn">Download Resume&nbsp;&nbsp;<img src="images/download-icon.png"></button></a>
         </div>
         <div class="info-container">
             <div class="info-inner">
@@ -119,7 +124,7 @@
                             alt="instagram" class="social-img"></a>
                 </div>
             </div>
-            <button type="button" class="btn" onclick="closeInfo()">Close</button>
+            <button type="button" class="btn" onclick="closeInfo()">Exit</button>
         </div>
     </div>
     <!-------------------------------------------------------Right section-------------------------------->
@@ -150,7 +155,7 @@
                         <div class="grid-item"><img src="images/skills-icon.png" onclick="openSkills()">
                             <p class="icon-name">Skills</p>
                         </div>
-                        <div class="grid-item"><img src="images/projects-icon.png">
+                        <div class="grid-item"><img src="images/projects-icon.png" onclick="window.location='https://tush27.github.io/all-projects/'">
                             <p class="icon-name">Projects</p>
                         </div>
                         <div class="grid-item"><img src="images/experience-icon.png" onclick="openExperiences()">
@@ -159,7 +164,7 @@
                         <div class="grid-item"><img src="images/interest-icon.png" onclick="openInterests()">
                             <p class="icon-name">Interests</p>
                         </div>
-                        <div class="grid-item"><img src="images/resume-icon.png">
+                        <div class="grid-item"><img src="images/resume-icon.png" onclick="window.location='https://drive.google.com/file/d/1bkFJvXTFToIV0ddDZb4c6q5N2BZNVxbC/view?usp=sharing'">
                             <p class="icon-name">Resume</p>
                         </div>
                         <div class="grid-item"><img src="images/contact-icon.png" onclick="openContact()">
@@ -183,6 +188,7 @@
             </div>
             <div class="phone-lower">
                 <span class="phone-lower-slot" onclick="phone_unlock()"></span>
+                <audio id="audio" src="images/unlock_notification.mp3"></audio>
             </div>
         </div>
     </div>
