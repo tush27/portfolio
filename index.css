@@ -229,8 +229,7 @@ body {
   cursor: pointer;
 }
 .grid-item img:hover{
- height: 11vh;
- margin:0 -1vh -1vh -1vh;
+transform: scale(1.15);
 }
 .icon-name {
   color: #fff;
@@ -331,6 +330,7 @@ margin-top: 8px;
   color: #0095f6;
   background-color: #fff;
   border: 1.5px solid #0095f6;
+  transform: scale(1.05);
 
 
 }
@@ -353,6 +353,10 @@ footer {
   height: 25px;
   cursor: pointer;
   margin: 3px;
+}
+
+.social-img:hover{
+  transform: scale(1.09);
 }
 
 .info-container {
@@ -399,8 +403,14 @@ footer {
   border-radius: 20px;
   overflow: auto;
   padding: 20px;
- 
-  
+}
+
+.info-shutter::-webkit-scrollbar {
+  display: none;
+}
+.info-shutter{
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 #about-container{
@@ -423,9 +433,10 @@ footer {
 }
 
 #skills-container progress{
-  left: 150px;
+  left: 200px;
   position: absolute;
 }
+
 
 
 
