@@ -229,8 +229,8 @@ body {
   height: 10vh;
   cursor: pointer;
 }
-.grid-item img:hover{
-transform: scale(1.15);
+.grid-item img:hover {
+  transform: scale(1.15);
 }
 .icon-name {
   color: #fff;
@@ -289,15 +289,14 @@ transform: scale(1.15);
   border-radius: 50%;
   margin: auto;
   border: 10px solid #fff;
-  box-shadow: 4px 4px rgba(0, 0, 0, 0.103);;
+  box-shadow: 4px 4px rgba(0, 0, 0, 0.103);
 }
-#name{
+#name {
   text-align: center;
   color: #493945;
-text-shadow: 4px 6px rgba(0, 0, 0, 0.103);
-margin-top: 8px;
-/* background-color: blueviolet; */
-
+  text-shadow: 4px 6px rgba(0, 0, 0, 0.103);
+  margin-top: 8px;
+  /* background-color: blueviolet; */
 }
 .profile-des-container {
   /* background-color: #eee; */
@@ -312,7 +311,7 @@ margin-top: 8px;
   color: #363636;
 }
 #download-btn {
-  margin: 4vh;
+  /* margin: 4vh; */
   height: 50px;
   width: 35%;
   min-width: 215px;
@@ -326,13 +325,11 @@ margin-top: 8px;
   cursor: pointer;
   position: relative;
 }
-#download-btn:hover{
+#download-btn:hover {
   color: #0095f6;
   background-color: #fff;
   border: 1.5px solid #0095f6;
   transform: scale(1.05);
-
-
 }
 #download-btn img {
   height: 1em;
@@ -344,7 +341,7 @@ footer {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   flex: 0 0 100%;
-  color: #9CC;
+  color: #9cc;
   text-align: center;
   margin-top: 20px;
 }
@@ -355,7 +352,7 @@ footer {
   margin: 3px;
 }
 
-.social-img:hover{
+.social-img:hover {
   transform: scale(1.09);
 }
 
@@ -388,11 +385,11 @@ footer {
   right: 10px;
   border-radius: 20px;
 }
-.btn:hover{
+.btn:hover {
   opacity: 1;
 }
 
-.info-inner{
+.info-inner {
   top: 5vh;
   position: absolute;
   width: 90%;
@@ -408,55 +405,34 @@ footer {
 .info-shutter::-webkit-scrollbar {
   display: none;
 }
-.info-shutter{
+.info-shutter {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
 
-#about-container{
+#about-container {
   display: none;
 }
-#education-container{
+#education-container {
   display: none;
 }
-#skills-container{
+#skills-container {
   display: none;
 }
-#experiences-container{
+#experiences-container {
   display: none;
 }
-#Courses-container{
+#Courses-container {
   display: none;
 }
-#contact-container{
+#contact-container {
   display: none;
 }
 
-#skills-container progress{
+#skills-container progress {
   left: 200px;
   position: absolute;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* -------------------responsiveness-------------------- */
 @media screen and (max-width: 900px) {
@@ -480,9 +456,9 @@ footer {
     top: 0;
     left: 0;
     -ms-transform: none;
-  transform: none;
-  border-radius: 0px;
-}
+    transform: none;
+    border-radius: 0px;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -525,7 +501,6 @@ footer {
   .grid-item img {
     height: 13vw;
   }
-
 }
 
 @media screen and (max-width: 300px) {
