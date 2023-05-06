@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
+  line-height: 140%;
 }
 
 body {
@@ -285,7 +286,6 @@ transform: scale(1.15);
 .profile-pic-container {
   background-color: #999;
   height: 48vh;
-  width: 48vh;
   border-radius: 50%;
   margin: auto;
   border: 10px solid #fff;
@@ -425,7 +425,7 @@ footer {
 #experiences-container{
   display: none;
 }
-#interests-container{
+#Courses-container{
   display: none;
 }
 #contact-container{
@@ -497,8 +497,7 @@ footer {
     animation: none;
   }
   .profile-pic-container {
-    height: 50vw;
-    width: 50vw;
+    /* height: 50vw; */
     border: 2vw solid #fff;
   }
   .profile-des-container {

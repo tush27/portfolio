@@ -49,10 +49,10 @@ function closeOthers(){
    openInfo();
    document.getElementById("experiences-container").style.display="block";
  }
- function openInterests(){
+ function openCourses(){
    closeOthers();
    openInfo();
-   document.getElementById("interests-container").style.display="block";
+   document.getElementById("Courses-container").style.display="block";
  }
  function openContact(){
    closeOthers();
@@ -60,6 +60,6 @@ function closeOthers(){
    document.getElementById("contact-container").style.display="block";
  }
 
- window.onload = function(){
-  alert('This website is currently under construction! Some features will become functional in the coming days. Thanks for your cooperation😊');
- }
+//  window.onload = function(){
+//   alert('This website is currently under construction! Some features will become functional in the coming days. Thanks for your cooperation😊');
+//  }
